@@ -30,7 +30,7 @@
 
 		sudo docker run -it --name NAME_REPOSITOTY /bin/bash
 
-		sudo docker run -p 80:80 --name NAME NAME_REPOSITORY:TAG
+		sudo docker run -p 80:80 --name NAME NAME_REPOSITORY:TAG (-p redirige un puerto publico a un puerto privado dentro del contendor)
 
 		sudo docker run  -it -p 80:80 --name NAME NAME_REPOSITORY:TAG (se conecta al contenedor una vez creado)
 
