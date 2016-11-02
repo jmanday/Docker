@@ -23,15 +23,15 @@
 
 - **Generar la nueva imagen con docker en base al fichero creado anteriormente**
 
-		sudo docker build -t jmanday:ubuntu - -file ./DockerFile .
+		sudo docker build -t jmanday:ubuntu --file ./DockerFile .
 
 - **Crear un contenedor a partir de la imagen previamente creada**
 
-		sudo docker run -it NAME_REPOSITOTY /bin/bash
+		sudo docker run -it --name NAME_REPOSITOTY /bin/bash
 
-		sudo docker run -p 80:80 - - name NAME NAME_REPOSITORY:TAG
+		sudo docker run -p 80:80 --name NAME NAME_REPOSITORY:TAG
 
-		sudo docker run  -it -p 80:80 - - name NAME NAME_REPOSITORY:TAG (se conecta al contenedor una vez creado)
+		sudo docker run  -it -p 80:80 --name NAME NAME_REPOSITORY:TAG (se conecta al contenedor una vez creado)
 
 - **Ver los contenedores creados**
 
