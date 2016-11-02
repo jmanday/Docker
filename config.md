@@ -23,7 +23,8 @@
 
 - **Generar la nueva imagen con docker en base al fichero creado anteriormente**
 
-		sudo docker build -t jmanday:ubuntu --file ./DockerFile .
+		sudo docker build -t NAME_REPOSITORY:TAG . (dentro del directorio donde este el fichero Dockerfile)
+		sudo docker build -t NAME_REPOSITORY:TAG --file ./DockerFile .
 
 - **Crear un contenedor a partir de la imagen previamente creada**
 
