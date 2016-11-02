@@ -27,6 +27,8 @@
 
 - **Crear un contenedor a partir de la imagen previamente creada**
 
+		sudo docker run -it NAME_REPOSITOTY /bin/bash
+
 		sudo docker run -p 80:80 - - name NAME NAME_REPOSITORY:TAG
 
 		sudo docker run  -it -p 80:80 - - name NAME NAME_REPOSITORY:TAG (se conecta al contenedor una vez creado)
