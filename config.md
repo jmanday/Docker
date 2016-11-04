@@ -23,7 +23,7 @@
 
 - **Generar la nueva imagen con docker en base al fichero creado anteriormente**
 
-		sudo docker build -t server/cret .
+		sudo docker build -t NAME_REPOSITORY .
 		
 		sudo docker build -t NAME_REPOSITORY:TAG . (dentro del directorio donde este el fichero Dockerfile)
 		
@@ -37,9 +37,11 @@
 
 		sudo docker run  -it -p 80:80 --name NAME NAME_REPOSITORY:TAG (se conecta al contenedor una vez creado)
 
+		sudo docker run -P NAME_REPOSITORY (realiza el mapeo de puertos entre el host y el contenedor autamáticamente a través de un rango elevado de puertos - *ephemeral port range*)
+		
 - **Ver los contenedores creados**
 
-		sudo docker ps
+		sudo docker ps -a
 	
 - **Conectar a un contenedor docker**
 		
