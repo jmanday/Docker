@@ -43,9 +43,9 @@
 
 		sudo docker ps -a
 	
-- **Conectar a un contenedor docker**
+- **Ejecutar un nuevo comando a un contenedor que este corriendo**
 		
-		sudo docker exec -t -i name_server /bin/bash
+		sudo docker exec -t -i NAME_SERVER COMAND
 
 - **Salir de un contenedor** 
 		
