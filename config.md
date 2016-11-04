@@ -50,10 +50,15 @@
 - **Salir de un contenedor** 
 		
 		exit
+		
+- **Ejecutar un contenedor**
+
+		sudo docker start -i NAME_CONTAINER
 
 - **Eliminar una imagen de docker**
 		
 		sudo docker rmi -f NAME_REPOSITORY:TAG	
+		
 - **Eliminar un contenedor de docker**
 
 		sudo docker rm -f CONTAINER_ID (un contenedor con ese ID)
