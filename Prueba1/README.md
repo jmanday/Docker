@@ -13,6 +13,11 @@ La aplicación web sigue el estándar de la plataforma de desarrollo MEAN (Mongo
 
 La potencia de docker la vemos en este ejemplo de la siguiente manera. Sólo es necesario ejecutar el script **docker.sh** para que en cuestión de minutos la aplicación web este disponible en el contenedor y accesible desde el host para poder interacturar con ella.
 
+## Arquitectura
+
+
+En esta prueba la arquitectura es completamente monolítica y centralizada, ya que tanto la aplicación web como los servicios, en este caso la base de datos, residen en el mismo contenedor docker.
+
 
 ## Fichero docker.sh
 Este fichero lo que hace en primer lugar es eliminar todos los contenedores e imagenes que hayan instalados en el host (posteriormente esto se valorará y mejorará) para crear la imagen que se describe en el fichero **Dockerfile**.
