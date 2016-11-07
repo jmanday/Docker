@@ -53,7 +53,11 @@
 		
 - **Ejecutar un contenedor**
 
-		sudo docker start -i NAME_CONTAINER
+		sudo docker start NAME_CONTAINER
+		
+- **Detener un contenedor**
+
+		sudo docker stop NAME_CONTAINER
 
 - **Eliminar una imagen de docker**
 		
@@ -70,7 +74,3 @@
 - **Obtener información de docker**
 
 		sudo docker info
-
-- **Levantar un contenedor**
-
-		sudo docker start -a NAME
