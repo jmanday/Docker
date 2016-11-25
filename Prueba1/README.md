@@ -25,3 +25,11 @@ Este fichero lo que hace en primer lugar es eliminar todos los contenedores e im
 La imagen que docker crea es un Linux con [Node](https://nodejs.org/es/), [Express](http://expressjs.com/es/) y [MongoDB](https://www.mongodb.com/es) instalados, además de la aplicacion web descargada de su respectivo repositorio e instalados todos los paquetes necesarios para la misma descritos en su fichero **package.json**.
 
 Después de crear la imagen, el fichero define un contenedor en base a esta imagen y lo ejecuta. Cuando el contenedor es creado levanta el servicio de [MongoDB](https://www.mongodb.com/es) y ejecuta [Node](https://nodejs.org/es/), quedando de esta manera la aplicación web accesible desde el/los puerto/s que se indicaron al crear la instancia.
+
+
+
+
+## Como utilizarlo
+Vamos a describir paso a paso como realizar esta prueba para ver el funcionamiento de **Docker** y los ficheros *Dockerfile*.
+
+Lo primero de todo es hacerse con una instancia remota donde desplegar Docker, para esta prueba se va a utilizar una máquina creada a través del IaaS **AWS** como se muestra en las siguientes imágenes.
